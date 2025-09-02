@@ -1,0 +1,18 @@
+div img {
+    filter: saturate(0%);
+    width: 3%;
+    border: 2px solid rgb(30, 187, 30);
+    /*height: 40%;*/
+    object-fit: cover;
+    border-radius: 12px;
+    transition: all ease 0.4s;
+    cursor: pointer;
+}
+
+div img:hover {
+    filter: saturate(100%);
+    width: 40%;
+}
+body {
+    background-color: black;
+}
