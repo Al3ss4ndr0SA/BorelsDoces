@@ -31,10 +31,6 @@ section {
     margin: 0 auto;
     padding: 0 20px;
 }
-.carousel-4{
-    background: linear-gradient(to right, #241705, #BC430D); /* Exemplo: Laranja para pêssego */
-}
-
 .carousel {
     display: block;
     text-align: left;

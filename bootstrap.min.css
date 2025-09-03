@@ -439,7 +439,7 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-    -webkit-appearance: button
+    -webkit-appearance:button
 }
 
 button:not(:disabled),
@@ -744,7 +744,7 @@ O Bootstrap usa um sistema de 12 colunas que se adapta à tela. Tudo começa com
     background: linear-gradient(to right, #BC430D, #F09410); /* Exemplo: Laranja para pêssego */
 }
 .carousel-4{
-    background: linear-gradient(to right, #241705, #BC430D); /* Exemplo: Laranja para pêssego */
+    background: linear-gradient(to right, #F0D0C7, #f805bf); /* Exemplo: Laranja para pêssego */
 } /*  &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& fim  sub classes &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 /* O que faz:
 ✅ Centraliza o conteúdo no meio da página;
