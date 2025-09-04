@@ -884,3 +884,63 @@ footer a:hover {
     }
     */
 /* ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ 👆 CARD 👆 ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ */
+
+/* Responsive Images for Carousels */
+/* Scrollable thumbnails for all carousels starting from screen width 992px and below */
+@media (max-width: 992px) {
+    .container.carousel-1 .carousel__thumbnails,
+    .container.carousel-2 .carousel__thumbnails,
+    .container.carousel-3 .carousel__thumbnails,
+    .container.carousel-4 .carousel__thumbnails {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 10px;
+        justify-content: flex-start;
+        margin-top: 10px;
+        -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+        scrollbar-width: thin;
+        scrollbar-color: rgba(0,0,0,0.2) transparent;
+    }
+
+    .container.carousel-1 .carousel__thumbnails::-webkit-scrollbar,
+    .container.carousel-2 .carousel__thumbnails::-webkit-scrollbar,
+    .container.carousel-3 .carousel__thumbnails::-webkit-scrollbar,
+    .container.carousel-4 .carousel__thumbnails::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .container.carousel-1 .carousel__thumbnails::-webkit-scrollbar-thumb,
+    .container.carousel-2 .carousel__thumbnails::-webkit-scrollbar-thumb,
+    .container.carousel-3 .carousel__thumbnails::-webkit-scrollbar-thumb,
+    .container.carousel-4 .carousel__thumbnails::-webkit-scrollbar-thumb {
+        background-color: rgba(0,0,0,0.2);
+        border-radius: 4px;
+    }
+
+    .container.carousel-1 .carousel__thumbnails li,
+    .container.carousel-2 .carousel__thumbnails li,
+    .container.carousel-3 .carousel__thumbnails li,
+    .container.carousel-4 .carousel__thumbnails li {
+        flex: 0 0 auto;
+        max-width: none;
+        margin: 0;
+    }
+
+    .container.carousel-1 .carousel__thumbnails img,
+    .container.carousel-2 .carousel__thumbnails img,
+    .container.carousel-3 .carousel__thumbnails img,
+    .container.carousel-4 .carousel__thumbnails img {
+        width: 100%;
+        height: 100%;
+        border-radius: 75px 75px 75px 75px; /* original border-radius */
+        cursor: grab;
+        transition: transform 0.3s ease;
+    }
+
+    .container.carousel-1 .carousel__thumbnails img:active,
+    .container.carousel-2 .carousel__thumbnails img:active,
+    .container.carousel-3 .carousel__thumbnails img:active,
+    .container.carousel-4 .carousel__thumbnails img:active {
+        cursor: grabbing;
+    }
+}
